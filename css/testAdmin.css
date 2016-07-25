@@ -1,0 +1,179 @@
+/**
+ * @author dev@dump.com.ua Андрій
+ */
+
+ul.main_list input[type="radio"],
+div.dropzone,
+#message
+{
+    display: none;
+}
+#message{
+    position: fixed;
+    top: 10px;
+    right: 40px;
+    padding: 10px;
+    width: 300px;
+    z-index: 9999;
+    background-color: #FF0000;
+    color: white;
+    border-radius: 6px
+}
+a{
+    cursor: pointer
+}
+.fa-plus{
+    color: #6A09B1;
+    margin-left: 10px;
+    cursor: pointer
+}
+.popover {
+    min-width: 300px
+}
+.popover-title .fa-times{
+    float: right;
+    cursor: pointer;
+    opacity: .2;
+}
+.popover-title .fa-times:hover{
+    opacity: 1
+}
+.popover-content textarea {
+    width: 95%;
+    resize: vertical
+}
+.list_head b{
+    line-height: 32px;
+    margin-left: 10px
+}
+
+ul.main_list {
+    margin: 20px 0;
+    list-style: none
+}
+ul.main_list .fa-pencil {
+    display: block;
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: .2;
+    margin-top: 2px;
+    color: indigo;
+}
+ul.main_list li {
+    min-height: 32px;
+    border-top: #ddd 1px solid;
+    padding: 4px;
+}
+ul.main_list li:hover{
+    background-color: #EEE;
+}
+ul.main_list li.active{
+    background-color: #ddd
+}
+ul.main_list li.active .fa-pencil{
+    opacity: 1;
+}
+ul.main_list li:hover .fa-pencil{
+    opacity: 1;
+}
+ul.main_list li.inactive .title {
+    color: #bbb
+}
+ul.main_list label{
+    display: inline;
+    margin-top: 0
+}
+ul.main_list label .fa {
+    float: left;
+    margin: 2px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+ul.main_list label .fa-dot-circle-o{
+    color: red
+}
+ul.main_list label .fa-circle-o{
+    color: #DCD4D4;
+}
+.fa.fa-arrows-alt {
+    cursor: pointer;
+    margin-right: 5px;
+}
+.fa.fa-rub{
+    color: #E48686
+}
+#tests .popover.right {
+    max-width: 336px
+}
+.btn.pro .fa-rub {
+    line-height: 22px;
+    height: 20px
+}
+.fa.fa-rub.active {
+    color: white
+}
+
+
+/* filedrop */
+.dropzone form {margin: 0}
+.dropzone{border:2px dashed rgba(0,0,0,.2);min-width:240px}
+.dropzone[data-type="question"]{height:300px}
+.dropzone[data-type="explanation"]{height:64px}
+.dropzone:hover{border:2px dashed rgba(0,0,0,.4);cursor:pointer}
+.dropzone:hover i{opacity:0.4}
+.dropzone i:hover{opacity:0.6;cursor:pointer}
+.dropzone [data-type="question"] .sh{height: 300px}
+.dropzone [data-type="explanation"] .sh{height: 64px}
+[data-type="explanation"] .sh a {
+    position: absolute;
+    margin-left: 30px;
+    line-height: 25px;
+}
+
+.fd-zone>div:first-child{opacity:0}
+.fd-file{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute !important;
+    right: 0 !important;
+    width: 100% !important;
+    font-size: 1px !important;
+    z-index: 1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer !important
+}
+.dropzone[data-type="question"] .fd-file{height:300px}
+.dropzone[data-type="explanation"] .fd-file {height:64px}
+.dropzone img{margin:0 auto;display:block;max-height:296px}
+.dropzone img.ajax-loader{margin:0 auto;padding-top:48px}
+.dropzone i{
+    z-index: 1009;
+    position:absolute;
+    font-size:24px;
+    opacity:0.2
+}
+.pdf_link{
+    line-height: 60px;
+}
+[src="files/_pdf.png"] {
+    margin: 0;
+    float: right
+}
+.fa.fa-bars{
+    float: right;
+    font-size: 32px;
+    color: indigo;
+    cursor: pointer
+}
+#resultsTextModal .form-control{
+    width: 430px
+}
+#resultsTextModal .form-control.min{
+    width: 25px
+}
+
+#answers .redactor-box {
+    margin-bottom: 0
+}
